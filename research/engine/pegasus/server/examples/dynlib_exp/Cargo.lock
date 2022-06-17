@@ -240,6 +240,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "crossbeam-queue"
+version = "0.2.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "774ba60a54c213d409d5353bda12d49cd68d14e45036a285234c8d6f91f92570"
+dependencies = [
+ "cfg-if 0.1.10",
+ "crossbeam-utils 0.7.2",
+ "maybe-uninit",
+]
+
+[[package]]
 name = "crossbeam-utils"
 version = "0.6.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -770,7 +781,7 @@ dependencies = [
  "backtrace",
  "bitflags",
  "crossbeam-channel 0.3.9",
- "crossbeam-queue",
+ "crossbeam-queue 0.2.3",
  "crossbeam-utils 0.6.6",
  "dot",
  "dyn-clonable",
@@ -799,7 +810,7 @@ dependencies = [
  "bytes 0.6.0",
  "crossbeam-channel 0.3.9",
  "crossbeam-deque 0.7.4",
- "crossbeam-queue",
+ "crossbeam-queue 0.1.2",
  "crossbeam-utils 0.7.2",
  "env_logger",
  "log",
@@ -813,7 +824,7 @@ name = "pegasus_executor"
 version = "0.1.0"
 dependencies = [
  "crossbeam-channel 0.3.9",
- "crossbeam-queue",
+ "crossbeam-queue 0.1.2",
  "crossbeam-utils 0.7.2",
  "lazy_static",
  "log",
@@ -849,7 +860,7 @@ name = "pegasus_network"
 version = "0.1.0"
 dependencies = [
  "crossbeam-channel 0.3.9",
- "crossbeam-queue",
+ "crossbeam-queue 0.1.2",
  "crossbeam-utils 0.7.2",
  "enum_dispatch",
  "lazy_static",
